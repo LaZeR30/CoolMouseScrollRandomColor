@@ -1,29 +1,25 @@
 // store elements
-
 const heading = document.getElementById("heading")
 const colorButton = document.getElementById("original-button")
 const mysteryButton = document.getElementById("mystery-button")  
 
-// random number functionto create color codes for the randomColor variable
-// NOT JAVASCRIPT rgb(255, 255, 255)  rgb(#, #, #)
-//const randomColor = "rgb('num + num + num ')"
-
+// return random numbers to RGB value
+// rgb(255, 255, 255) // rgb(#, #, #)
 function rgb(num) {
     return Math.floor(Math.random() * num)
 }
 
-// color change >>> what is string interpolation ??
+// color change >>> change later to string interpolation
 function colorChange() {
-    // randomColor needs to be a string "rgb(num + num + num)"
+    // randomColor needs to be a string "rgb(num, num, num)"
     const randomColor = 'rgb(' + rgb(255) + ',' + rgb(255) + ',' + rgb(255) + ')';
     event.target.style.backgroundColor = randomColor;
 }
 
+//apply mouse scroll or click on elements
 heading.onwheel = colorChange ;
-//colorButton.onclick = colorChange(); DO NOT NEED '()' coz event 
+
 colorButton.onclick = colorChange;
 
-//mysteryButton
-//msyteryButton.onwheel = colorChange;
 mysteryButton.onwheel = colorChange;
 
