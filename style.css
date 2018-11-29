@@ -1,0 +1,43 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito";
+    background-color: lightblue;
+}
+
+img{ 
+    width:300px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+h1 { 
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p { 
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+button {
+    width: 400px;
+    height: 75px;
+    display: block;
+    background-color: darkblue;
+    color: white;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+    /* font-family: "Nunito"; */
+    font-family: inherit;
+}
